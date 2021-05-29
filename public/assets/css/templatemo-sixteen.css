@@ -677,6 +677,8 @@ footer .inner-content p a {
 .team-member img {
 	width: 100%;
 	overflow: hidden;
+
+	filter: grayscale(101) blur(10px);
 }
 
 .team-member .down-content {
@@ -686,6 +688,9 @@ footer .inner-content p a {
 
 .team-member .thumb-container {
 	position: relative;
+
+	overflow: hidden;
+
 }
 
 .team-member .thumb-container .hover-effect {
