@@ -9,8 +9,21 @@ const viewOption = {
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  console.log("home here")
   res.sendFile('index.html',viewOption)
 })
+
+app.get('/about', (req, res) => {
+  res.sendFile('about.html',viewOption)
+})
+
+app.get('/contact-us', (req, res) => {
+  res.sendFile('contact.html',viewOption)
+})
+
+app.get('/portfolio', (req, res) => {
+  res.sendFile('portfolio.html',viewOption)
+})
+
+
 
 app.listen(PORT, () => console.log(`Server running on port : ${PORT}`))
